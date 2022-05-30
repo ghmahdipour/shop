@@ -1,0 +1,165 @@
+.vendor-items-container {
+    position: relative;
+    top: 135px;
+    bottom: 0;
+    height: 305px;
+    width: 100%;
+        .vendor-items-container__section {
+            @include flex;
+            @include flex-direction-column;
+            @include align-item-center;
+            width: 100%;
+            height: 100%;
+                .vendor-items-container__section__box{
+                    height: 282px;
+                    max-width: 567px;
+                    min-width: calc(100% - 60%);
+                    border-radius: 6px;
+                    background-color: $white;
+                        .vendor-items-container__section_box--img{
+                            position: relative;
+                            .box-img{
+                                overflow: hidden;
+                                position: relative;
+                                height: 165px;
+                                max-height: 100%;
+                                border-top-left-radius: 6px;
+                                border-top-right-radius: 6px;
+                                .box-img__img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .box-logo{
+                                position: absolute;
+                                bottom: -16px;
+                                right: 8px;
+                                width: 64px;
+                                height: 64px;
+                                padding: 4px;
+                                border-radius: 8px;
+                                background-color: $white;
+                                -webkit-box-shadow: $card-shadow-3;
+                                box-shadow: $card-shadow-3;
+                                .box-logo__img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 4px;
+                                    object-fit: cover;
+                                }
+                                
+                            }
+                        }
+                }
+                .vendor-items-container__section_box--content{
+                    @include flex;
+                    @include flex-direction-column;
+                    justify-content: space-around;
+                    padding: 14px 16px 8px 16px;
+                    height: 110px;
+                    direction: rtl;
+                    .box-details{
+                        @include flex;
+                        @include flex-direction-row;
+                        @include justify-content-between;
+                        @include align-item-center;
+                        div {
+                            @include flex;
+                            @include flex-direction-row;
+                        }
+                        .box-details__right{
+                            width: 50%;
+                            margin-left: 10px;
+                            .box-details__right__text{
+                                margin: 0;
+                                position: relative;
+                                max-width: 100%;
+                                margin-left: 4px;
+                                line-height: 1.5;
+                                color: $text-color;
+                                font-weight: $font-medium;
+                            }
+                            .box-details__right__discount__box {
+                                @include flex;
+                                @include flex-direction-row;
+                                @include align-item-center;
+                                @include justify-content-start;
+                                .discount-content{
+                                    color: white;
+                                    background-color: $primary;
+                                    font-size: $text-small;
+                                    font-weight: $font-medium;
+                                    @include flex;
+                                    @include justify-content-center;
+                                    @include align-item-center;
+                                    border-radius: 4px;
+                                    height: 12px;
+                                    border-radius: 4px;
+                                    text-align: center;
+                                    padding: 4px;
+                                }
+                            }
+                        }
+                        .box-details__left{
+                            @include flex;
+                            @include flex-direction-row;
+                            @include justify-content-start;
+                            @include align-item-center;
+                            font-size: $text-small;
+                            font-weight: $font-regular;
+                            padding: 2px 4px 2px 2px;
+                            border-radius: 4px;
+                            .box-details__left__span{
+                                color: $text-color-light;
+                                .box-details__left__span__char{
+                                    color: $seperator-color;
+                                }
+                            }
+                            .random-box {
+                                padding: 2px 4px 2px 2px;
+                                border-radius: 4px;
+                            }
+                            .box-details__left__box--lightgreen{
+                                background-color: $light-yellow-green-color;
+                                color: $starcolor-35;
+                            }
+                            .box-details__left__box--green{
+                                background-color: $light-limeade-color;
+                                color: $star-color-4;
+                            }
+                            .box-details__left__box--yellow {
+                                background-color: $light-Barbery-color;
+                                color: $starcolor-30
+                            }
+                        }
+                    }
+                    .box-description{
+                        font-size: $text-small;
+                        font-weight: $font-regular;
+                        color: $text-color;
+                        width: 100%;;
+                    }
+                    .box-bottom{
+                        @include flex;
+                        @include flex-direction-row;
+                        @include justify-content-center;
+                        @include align-item-center;
+                        margin-bottom: 10px;
+                        .box-bottom__btn{
+                            width: 100%;
+                            padding: 2px;
+                            text-align: center;
+                            border-radius: 16px;
+                            background-color: $alpha-green;
+                            .box-bottom__btn__span{
+                                font-size: $text-small;
+                                font-weight: $font-regular;
+                                color: $text-green
+                            }
+                        }
+                    }
+                }
+        }
+   
+}

@@ -1,0 +1,20 @@
+.footer {
+    .footer-menu-tab {
+        width: 100%;
+        background-color: $light-white;
+        position: fixed;
+        bottom: 0;
+        @include justify-content-between;
+        padding: 0 30px;
+        box-sizing: border-box;
+        z-index: 10; /*Temporary*/
+          ul.footer-menu-tab__list {
+            @include justify-content-between;
+            margin: 0;
+            padding: 0;
+            @include flex;
+            list-style: none;
+            @include align-item-center;
+          }
+    }
+}

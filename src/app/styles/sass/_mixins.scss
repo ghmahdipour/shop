@@ -1,0 +1,79 @@
+@mixin flex {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox; /* ie 10 */
+    display:-webkit-flex;
+    display: flex;
+}
+
+@mixin align-item-center {
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align:center; /* ie 10 */
+    align-items: center;
+}
+
+@mixin align-item-start {
+    -webkit-align-items: start;
+    -moz-align-items: start;
+    -ms-align-items: start;
+    -o-align-items: start;
+    -webkit-box-align: start;
+    -ms-flex-align:start; /* ie 10 */
+    align-items: flex-start;
+}
+
+@mixin justify-content-between {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: justify; /* ie 10 */
+    justify-content: space-between;
+}
+
+@mixin justify-content-center {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: justify; /* ie 10 */
+    justify-content: center;
+}
+
+@mixin flex-direction-row {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    -webkit-box-orient: horizontal; /*ie10*/
+    flex-direction: row;
+}
+
+@mixin flex-direction-column {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical; /*ie10*/
+    flex-direction: column;
+}
+@mixin justify-content-start {
+    -webkit-justify-content: start;
+    -moz-justify-content: start;
+    -ms-justify-content: start;
+    -o-justify-content: start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+

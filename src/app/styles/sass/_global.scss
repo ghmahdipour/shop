@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'IRANSans';
+      font-style: normal;
+      src: url('../../assets/fonts/IRANSans/IRANSansWeb\(FaNum\).ttf') format('truetype');
+      font-display: block;
+      font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IRANSans';
+    font-size: 16px;
+}
+input {
+    direction: rtl;
+    &:focus-visible{
+        outline: none;
+    }
+}
+input:-internal-autofill-selected{
+    background-color: 0 0 0;
+}
+input, p, h1, h2, h3{
+    font-family: 'IRANSans';
+}
+p{margin: 0}
+h3 {font-size: 14px}
+
+.container {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-container{
+    min-height: 100vh;
+    background-color: rgba(153, 153, 153, 0.5);
+    .main-container__search-box{
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        width: 100vw;
+        background-color: $white;
+        .main-container__search-box__content{
+            @include flex;
+            @include justify-content-center;
+            @include align-item-center;
+            width: 90%;
+            margin: 8px auto;
+            position: relative;
+            .main-container__search-box__content--first{
+                background: rgba(64,64,64,0.04);
+                border: 1px solid $border-color;
+                @include flex;
+                @include flex-direction-row;
+                @include align-item-center;
+                width: 100%;
+                border-radius: 6px;
+                background-color: $white;
+                padding: 0 16px 0 16px;
+                height: 48px;
+                box-shadow: rgba(67, 71, 85, 0.2) 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
+            }
+            .main-container__search-box__content--input{
+                font-size: $text-medium;
+                font-weight: $font-light;
+                color: $text-color;
+                position: absolute;
+                right: 16px;
+                border: none;
+                width: 80%;
+            }
+            .main-container__search-box__content--icon{
+                position: absolute;
+                margin-right: auto;
+                left: 12px;
+                height: 24px;
+            }
+        }
+    }
+    .main-container__loading {
+        position: absolute;
+        top: 230px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        .main-container__loading__text{
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+
+
+

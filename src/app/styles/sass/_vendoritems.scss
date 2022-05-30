@@ -1,0 +1,27 @@
+.header{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    height: 60px;
+    width: 100%;
+        .header__title{
+            @include flex;
+            flex-direction: row;
+            @include justify-content-between;
+            @include align-item-center;
+            height: 59px;
+            padding: 0 20px;
+            font-size: 17px;
+            direction: rtl;
+        }
+}
+.vendor-content{
+    @include flex;
+    @include flex-direction-column;
+    height: 100%;
+    padding-bottom: 220px;
+}
+.vendor-content__2 {
+    width: 100%;
+    height: calc(100% - 56px);
+}

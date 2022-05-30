@@ -1,0 +1,23 @@
+.footer-menu-tab__list__item {
+    height: 100%;
+    @include flex;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+    @include align-item-center;
+    @include justify-content-center;
+    padding: 5px;
+        a {
+            text-decoration: none;
+            padding: 15px;
+            font-weight: 700;
+            color: $white;
+                &:active, &:hover  {
+                    cursor: pointer;
+                }
+                
+        }
+        a.active {
+            color: $primary;
+        }
+}
